@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "DotNetCoreFive": {
+    "WeatherForecast": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

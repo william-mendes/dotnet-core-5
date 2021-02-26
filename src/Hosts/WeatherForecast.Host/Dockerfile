@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["DotNetCoreFive/DotNetCoreFive.csproj", "DotNetCoreFive/"]
-RUN dotnet restore "DotNetCoreFive/DotNetCoreFive.csproj"
+COPY ["WeatherForecast/WeatherForecast.Host.csproj", "WeatherForecast/"]
+RUN dotnet restore "WeatherForecast/WeatherForecast.Host.csproj"
 COPY . .
-WORKDIR "/src/DotNetCoreFive"
-RUN dotnet build "DotNetCoreFive.csproj" -c Release -o /app/build
+WORKDIR "/src/WeatherForecast"
+RUN dotnet build "WeatherForecast.Host.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "DotNetCoreFive.csproj" -c Release -o /app/publish
+RUN dotnet publish "WeatherForecast.Host.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "DotNetCoreFive.dll"]
+ENTRYPOINT ["dotnet", "WeatherForecast.Host.dll"]
