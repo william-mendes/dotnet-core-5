@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecast.Host", "Hosts\WeatherForecast.Host\WeatherForecast.Host.csproj", "{5B8657F0-1712-4BFA-91ED-D3EB937F4601}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hosts", "Hosts", "{05AB0CAC-846E-47DD-87CA-AB6060C28D15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{87A5295B-9E90-486E-AD5B-1BB0CEA4EB5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{10898F6C-5626-4B43-A89F-CD479C61C29E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2D8F1472-1F14-42C8-A5C0-13F9A34CA966}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B8657F0-1712-4BFA-91ED-D3EB937F4601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B8657F0-1712-4BFA-91ED-D3EB937F4601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B8657F0-1712-4BFA-91ED-D3EB937F4601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B8657F0-1712-4BFA-91ED-D3EB937F4601}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5B8657F0-1712-4BFA-91ED-D3EB937F4601} = {05AB0CAC-846E-47DD-87CA-AB6060C28D15}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {768A8E5F-7836-438E-AF67-619580B81A0C}
+	EndGlobalSection
+EndGlobal
